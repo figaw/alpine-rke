@@ -20,7 +20,7 @@ docker build \
 docker run -ti --rm -v $(pwd):/apps figaw/alpine-rke
 
 # run container as command
-alias rke="docker run -ti --rm -v $(pwd):/apps figaw/alpine-rke"
+alias rke='docker run -ti --rm -v "$(pwd)":/apps figaw/alpine-rke'
 rke --version
 ```
 
